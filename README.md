@@ -8,6 +8,4 @@ test some newleaf elements
 quasar dev
 ```
 
-### Customize the configuration
 
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js).

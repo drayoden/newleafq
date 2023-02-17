@@ -1,39 +1,6 @@
 <template>
   <!-- <q-layout view="lHh Lpr lFf"> -->
   <q-layout view="hHh lpr lFf">
-    <!-- <q-header elevated> -->
-    <!-- <q-toolbar> -->
-    <!-- right-align hamburger menu -->
-    <!-- <q-space />
-    <q-btn
-      flat
-      dense
-      round
-      icon="menu"
-      aria-label="Menu"
-      @click="toggleLeftDrawer"
-    /> -->
-    <q-page-container>
-      <router-view />
-      <q-page>
-        <q-page-sticky position="top-right" :offset="[20, 20]">
-          <q-btn
-            flat
-            dense
-            round
-            icon="menu"
-            aria-label="Menu"
-            @click="toggleLeftDrawer"
-          />
-        </q-page-sticky>
-      </q-page>
-    </q-page-container>
-
-    <!-- <q-toolbar-title> Quasar App </q-toolbar-title> -->
-
-    <!-- <div>Quasar v{{ $q.version }}</div> -->
-    <!-- </q-toolbar> -->
-    <!-- </q-header> -->
 
     <q-drawer v-model="leftDrawerOpen" bordered overlay="true">
       <q-list>
@@ -51,6 +18,27 @@
         />
       </q-list>
     </q-drawer>
+
+
+
+    <q-page-container>
+      <router-view />
+    </q-page-container>
+
+
+    <!-- <q-page-container> -->
+    <q-page-sticky position="top-right" :offset="[20, 20]">
+      <q-btn
+        flat
+        dense
+        round
+        icon="menu"
+        aria-label="Menu"
+        @click="toggleLeftDrawer"
+      />
+    </q-page-sticky>
+    <!-- </q-page-container> -->
+    
   </q-layout>
 </template>
 

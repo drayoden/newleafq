@@ -1,8 +1,9 @@
 <template>
   <q-item
+    class="text-center"
+    items-center
     clickable
     tag="a"
-    target="_blank"
     :href="link"
   >
     <q-item-section
